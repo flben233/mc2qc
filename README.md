@@ -17,7 +17,13 @@
 
 为了适应某些服务器有多个子服务器，设计上这个插件支持同时连接多个服务器，你只需要把服务端插件安装在各个子服务器即可。
 
-首次启动时会在以下路径创建配置文件 qqnumber groupnumber token，你需要依次填写需要用于发消息的QQ号码，需要发的QQ群号，口令（这个口令可以随意填写，但是需要和spigot端插件填写的口令一致，否则无法连接）
+首次启动时会在以下路径创建配置文件 qqnumber groupnumber token，你需要依次填写.
+
+qqnumber: 用于发送消息的qq账号
+
+groupnumber: 要发送到的群号码
+
+token: 密码，用于验证连接的可靠性，这个值你可以随意设置，但是 **要与spigot端的这个文件的值保持一致**
 ```
 (Mirai主目录)/config/org.shirakawatyu.mc2qc
 ```
